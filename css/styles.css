@@ -1,0 +1,71 @@
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Вказуємо box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Усуваємо внутрішні відступи */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Усуваємо зовнішні відступи */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+/* Виставляємо основні налаштування за замовчуванням для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Видаляємо стандартну стилізацію для всіх ul та il, у яких є атрибут class*/
+ul,
+ol {
+  list-style: none;
+}
+
+/* Елементи a, які не мають класу, скидаємо до дефолтних стилів */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Спрощуємо роботу із зображеннями */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  background-color: burlywood;
+  padding: 24px;
+}
